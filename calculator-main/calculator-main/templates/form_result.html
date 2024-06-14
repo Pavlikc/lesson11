@@ -1,0 +1,34 @@
+<!-- Создай страницу для вывода информации пользователя -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    {% block content %}
+    <header class="header">
+        <div class="header__text">
+          <h1>{{name}}, cпасибо за заполнение формы<h1>
+        </div>
+    </header>
+    <div class="main__rez">
+        <h1>Ваши данные</h1>
+        <h1>
+            Ваш E-mail: {{email}}
+        </h1>
+        <h1>
+            Ваш адрес: {{address}}
+        </h1>
+        <h1>
+            Дата: {{date}}
+        </h1>
+        <h1>
+            Ключевое слово: {{word}}
+        </h1>
+    </div>
+    {% endblock %}
+</body>
+</html>
